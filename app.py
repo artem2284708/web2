@@ -4,13 +4,13 @@ app = Flask(__name__)
 
 
 def countries_name(x):
-    if x == 'Spain': return 'ES1'
-    if x == 'France': return 'FR1'
-    if x == 'England': return 'GB1'
-    if x == 'Greece': return 'GR1'
-    if x == 'Italy': return 'IT1'
-    if x == 'Germany': return 'L1'
-    if x == 'Russia': return 'RU1'
+    if x == 'Spain': return 'es1'
+    if x == 'France': return 'fr1'
+    if x == 'England': return 'gb1'
+    if x == 'Greece': return 'gr1'
+    if x == 'Italy': return 'it1'
+    if x == 'Germany': return 'l1'
+    if x == 'Russia': return 'ru1'
     return 'Options: Spain France England Greece Italy Germany Russia'
 
 
@@ -27,7 +27,7 @@ def check():
         return render_template('home.html')
 
 
-@app.route('/ES1', methods=["GET", "POST"])
+@app.route('/es1', methods=["GET", "POST"])
 def es1():
     if request.method == 'POST':
         query = request.form['our_params']
@@ -37,10 +37,10 @@ def es1():
         else:
             return render_template('home.html')
     else:
-        return render_template('ES1.html')
+        return render_template('es1.html')
 
 
-@app.route('/FR1', methods=["GET", "POST"])
+@app.route('/fr1', methods=["GET", "POST"])
 def fr1():
     if request.method == 'POST':
         query = request.form['our_params']
@@ -50,10 +50,10 @@ def fr1():
         else:
             return render_template('home.html')
     else:
-        return render_template('FR1.html')
+        return render_template('fr1.html')
 
 
-@app.route('/GB1', methods=["GET", "POST"])
+@app.route('/gb1', methods=["GET", "POST"])
 def gb1():
     if request.method == 'POST':
         query = request.form['our_params']
@@ -63,10 +63,10 @@ def gb1():
         else:
             return render_template('home.html')
     else:
-        return render_template('GB1.html')
+        return render_template('gb1.html')
 
 
-@app.route('/GR1', methods=["GET", "POST"])
+@app.route('/gr1', methods=["GET", "POST"])
 def gr1():
     if request.method == 'POST':
         query = request.form['our_params']
@@ -76,10 +76,10 @@ def gr1():
         else:
             return render_template('home.html')
     else:
-        return render_template('GR1.html')
+        return render_template('gr1.html')
 
 
-@app.route('/IT1', methods=["GET", "POST"])
+@app.route('/it1', methods=["GET", "POST"])
 def it1():
     if request.method == 'POST':
         query = request.form['our_params']
@@ -89,10 +89,10 @@ def it1():
         else:
             return render_template('home.html')
     else:
-        return render_template('IT1.html')
+        return render_template('it1.html')
 
 
-@app.route('/RU1', methods=["GET", "POST"])
+@app.route('/ru1', methods=["GET", "POST"])
 def ru1():
     if request.method == 'POST':
         query = request.form['our_params']
@@ -102,7 +102,7 @@ def ru1():
         else:
             return render_template('home.html')
     else:
-        return render_template('RU1.html')
+        return render_template('ru1.html')
 
 
 if __name__ == "__main__":
