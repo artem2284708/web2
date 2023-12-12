@@ -1,8 +1,3 @@
-from flask import Flask, request, render_template, url_for
-
-app = Flask(__name__)
-
-
 def countries_name(x):
     if x == 'Spain': return 'es1'
     if x == 'France': return 'fr1'
@@ -105,5 +100,3 @@ def ru1():
         return render_template('ru1.html')
 
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=4708)
